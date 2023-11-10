@@ -41,3 +41,16 @@ textarea {
 .text span {
     background-color: rgba(39, 39, 39, 255);
 }
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    outline: none;
+    cursor:default;
+}
