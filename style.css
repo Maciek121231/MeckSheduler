@@ -25,4 +25,19 @@ textarea {
     border-radius: 5px;
 }
 
+.format {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    background-color: rgba(39, 39, 39, 255);
+    margin-top: 20px;
+    padding: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
+.text span {
+    background-color: rgba(39, 39, 39, 255);
+}
