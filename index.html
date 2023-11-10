@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>aa</title>
+</head>
+<body>
+    <div class="inputdata">
+        <div class="informationWEEKSTART">
+            <label for="datetimePickerWEEKSTART">Select date when does the week start:</label>
+            <input type="datetime-local" id="datetimePickerWEEKSTART">
+            <button id="insertTimestampWEEKSTART">Insert Data</button>
+    
+            <script>
+                document.getElementById("insertTimestampWEEKSTART").addEventListener("click", function() {
+                    const datetimeInput = document.getElementById("datetimePickerWEEKSTART").value;
+                    const selectedDatetime = new Date(datetimeInput);
+                    const timestamp = Math.floor(selectedDatetime / 1000);
+                    const day2 = timestamp + 86400;
+                    const day3 = timestamp + 172800;
+                    const day4 = timestamp + 259200;
+                    const day5 = timestamp + 345600;
+                    const day6 = timestamp + 432000;
+                    const day7 = timestamp + 518400;
+    
+                    document.getElementById("timestampDisplayWEEKSTART").textContent = `<t:${timestamp}:F>`;
+                    document.getElementById("timestampDisplayWEEKSTARTD2").textContent = `<t:${day2}:F> :flag_eu:`;
+                    document.getElementById("timestampDisplayWEEKSTARTD3").textContent = `<t:${day3}:F> :flag_eu:`;
+                    document.getElementById("timestampDisplayWEEKSTARTD4").textContent = `<t:${day4}:F> :flag_eu:`;
+                    document.getElementById("timestampDisplayWEEKSTARTD5").textContent = `<t:${day5}:F> :flag_eu:`;
+                    document.getElementById("timestampDisplayWEEKSTARTD6").textContent = `:Rhinebund: <t:${day6}:F>`;
+                    document.getElementById("timestampDisplayWEEKSTARTD7").textContent = `:Rhinebund: <t:${day7}:F>`;
+                });
+            </script>
+    
+        </div>
+        
+        <div class="information Tuesday">
+        <label for="datetimePicker">Rallying time for Thursday:</label>
+        <input type="datetime-local" id="datetimePicker">
+        <label for="Information">Information about the day:</label>
+        <input type="text" id="Information">
+        <button id="insertTimestamp">Insert Data</button>
+    
+        <script>
+            document.getElementById("insertTimestamp").addEventListener("click", function() {
+                const datetimeInput = document.getElementById("datetimePicker").value;
+                const InformationInput = document.getElementById("Information").value;
+                const selectedDatetime = new Date(datetimeInput);
+                const timestamp = Math.floor(selectedDatetime / 1000);
+                const rallytime = timestamp - 1800;
+
+                document.getElementById("InformationOutput").textContent = `${InformationInput}`;
+                document.getElementById("timestampDisplay").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
+                document.getElementById("rallytimeDisplay").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+
+                
+
+            });
+        </script>
+        </div> 
+        <div class="informationWEDNESDAY">
+            <label for="datetimePickerWEDNESDAY">Rallying time for Wednesday:</label>
+            <input type="datetime-local" id="datetimePickerWEDNESDAY">
+            <label for="InformationWEDNESDAY">Information about the day:</label>
+            <input type="text" id="InformationWEDNESDAY">
+            <button id="insertTimestampWEDNESDAY">Insert Data</button>
+    
+            <script>
+                document.getElementById("insertTimestampWEDNESDAY").addEventListener("click", function() {
+                    const datetimeInput = document.getElementById("datetimePickerWEDNESDAY").value;
+                    const InformationInput = document.getElementById("InformationWEDNESDAY").value;
+                    const selectedDatetime = new Date(datetimeInput);
+                    const timestamp = Math.floor(selectedDatetime / 1000);
+                    const rallytime = timestamp - 1800;
+    
+                    
+                    document.getElementById("InformationOutputWEDNESDAY").textContent = `${InformationInput}`;
+                    document.getElementById("timestampDisplayWEDNESDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
+                    document.getElementById("rallytimeDisplayWEDNESDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+                });
+            </script>
+    
+        </div>
+        <div class="informationThursday">
+            <div class="informationThursday">
+                <label for="datetimePickerThursday">Rallying time for Thursday:</label>
+                <input type="datetime-local" id="datetimePickerThursday">
+                <label for="InformationThursday">Information about the day:</label>
+                <input type="text" id="InformationThursday">
+                <button id="insertTimestampThursday">Insert Data</button>
+        
+                <script>
+                    document.getElementById("insertTimestampThursday").addEventListener("click", function() {
+                        const datetimeInput = document.getElementById("datetimePickerThursday").value;
+                        const InformationInput = document.getElementById("InformationThursday").value;
+                        const selectedDatetime = new Date(datetimeInput);
+                        const timestamp = Math.floor(selectedDatetime / 1000);
+                        const rallytime = timestamp - 1800;
+        
+                        document.getElementById("InformationOutputThursday").textContent = `${InformationInput}`;
+                        document.getElementById("timestampDisplayThursday").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
+                        document.getElementById("rallytimeDisplayThursday").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+                    });
+                </script>
+        
+            </div>
+        </div>
+
+        <div class="friday">
+            <div class="informationFRIDAY">
+                <label for="datetimePickerFRIDAY">Rallying time for Friday:</label>
+                <input type="datetime-local" id="datetimePickerFRIDAY">
+                <label for="InformationFRIDAY">Information about the day:</label>
+                <input type="text" id="InformationFRIDAY">
+                <button id="insertTimestampFRIDAY">Insert Data</button>
+        
+                <script>
+                    document.getElementById("insertTimestampFRIDAY").addEventListener("click", function() {
+                        const datetimeInput = document.getElementById("datetimePickerFRIDAY").value;
+                        const InformationInput = document.getElementById("InformationFRIDAY").value;
+                        const selectedDatetime = new Date(datetimeInput);
+                        const timestamp = Math.floor(selectedDatetime / 1000);
+                        const rallytime = timestamp - 1800;
+        
+                        document.getElementById("InformationOutputFRIDAY").textContent = `${InformationInput}`;
+                        document.getElementById("timestampDisplayFRIDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
+                        document.getElementById("rallytimeDisplayFRIDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+                    });
+                </script>
+        
+            </div>
+        </div>
+
+        <div class="saturday"><div class="informationSATURDAY">
+            <label for="datetimePickerSATURDAY">Rallying time for Saturday:</label>
+            <input type="datetime-local" id="datetimePickerSATURDAY">
+            <label for="InformationSATURDAY">Information about the day:</label>
+            <input type="text" id="InformationSATURDAY">
+            <button id="insertTimestampSATURDAY">Insert Data</button>
+    
+            <script>
+                document.getElementById("insertTimestampSATURDAY").addEventListener("click", function() {
+                    const datetimeInput = document.getElementById("datetimePickerSATURDAY").value;
+                    const InformationInput = document.getElementById("InformationSATURDAY").value;
+                    const selectedDatetime = new Date(datetimeInput);
+                    const timestamp = Math.floor(selectedDatetime / 1000);
+                    const rallytime = timestamp - 1800;
+    
+                    document.getElementById("InformationOutputSATURDAY").textContent = `${InformationInput}`;
+                    document.getElementById("timestampDisplaySATURDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
+                    document.getElementById("rallytimeDisplaySATURDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+                });
+            </script>
+    
+        </div>
+
+        <div class="sunday"><div class="informationSUNDAY">
+            <label for="datetimePickerSUNDAY">Rallying time for Sunday:</label>
+            <input type="datetime-local" id="datetimePickerSUNDAY">
+            <label for="InformationSUNDAY">Information about the day:</label>
+            <input type="text" id="InformationSUNDAY">
+            <button id="insertTimestampSUNDAY">Insert Data</button>
+    
+            <script>
+                document.getElementById("insertTimestampSUNDAY").addEventListener("click", function() {
+                    const datetimeInput = document.getElementById("datetimePickerSUNDAY").value;
+                    const InformationInput = document.getElementById("InformationSUNDAY").value;
+                    const selectedDatetime = new Date(datetimeInput);
+                    const timestamp = Math.floor(selectedDatetime / 1000);
+                    const rallytime = timestamp - 1800;
+    
+                    document.getElementById("InformationOutputSUNDAY").textContent = `${InformationInput}`;
+                    document.getElementById("timestampDisplaySUNDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
+                    document.getElementById("rallytimeDisplaySUNDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+                });
+            </script>
+    
+        </div></div>
+
+    </div>
+    </div>
+    
+    <div class="format">
+        
+        # HERZOGTUM MECKLENBURG SCHEDULE<br>
+        <br>
+        :mecklenburg::goldstar::bugle::Furstendivision:<br>
+        <br>
+        > <span id="timestampDisplayWEEKSTART"></span> <br>
+        > COMMUNITY WIDE REST DAY<br> 
+        <br>
+        > <span id="timestampDisplayWEEKSTARTD2"></span> <br>
+        > <span id="InformationOutput">TBS/BREAK DAY</span><br>
+        <span id="timestampDisplay"></span><br>
+        <span id="rallytimeDisplay"></span><br>
+        <br>
+        > <span id="timestampDisplayWEEKSTARTD3"></span> <br>
+        > <span id="InformationOutputWEDNESDAY">TBS/BREAK DAY</span><br>
+        <span id="timestampDisplayWEDNESDAY"></span><br>
+        <span id="rallytimeDisplayWEDNESDAY"></span><br>
+        <br>
+        > <span id="timestampDisplayWEEKSTARTD4"></span> <br>
+        > <span id="InformationOutputThursday">TBS/BREAK DAY</span> <br>
+        <span id="timestampDisplayThursday"></span><br>
+        <span id="rallytimeDisplayThursday"></span><br>
+        <br>
+        > <span id="timestampDisplayWEEKSTARTD5"></span> <br>
+        > <span id="InformationOutputFRIDAY">TBS/BREAK DAY</span><br>
+        <span id="timestampDisplayFRIDAY"></span><br>
+        <span id="rallytimeDisplayFRIDAY"></span><br>
+        <br>
+        <br>
+        > <span id="timestampDisplayWEEKSTARTD6"></span><br>
+        > <span id="InformationOutputSATURDAY">TBS/BREAK DAY</span><br>
+        <span id="timestampDisplaySATURDAY"></span><br>
+        <span id="rallytimeDisplaySATURDAY"></span><br>
+        <br>
+        <br>
+        > <span id="timestampDisplayWEEKSTARTD7"></span><br>
+        > <span id="InformationOutputSUNDAY">TBS/BREAK DAY</span><br>
+        <span id="timestampDisplaySUNDAY"></span><br>
+        <span id="rallytimeDisplaySUNDAY"></span><br>
+        <br>
+        (TBS = To Be Scheduled) 
+    </div>
+
+</body>
+</html>
