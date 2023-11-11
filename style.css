@@ -29,6 +29,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 .text {
     background-color: rgba(39, 39, 39, 255);
