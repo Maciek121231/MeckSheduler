@@ -29,7 +29,6 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
 }
 .text {
     background-color: rgba(39, 39, 39, 255);
@@ -37,6 +36,7 @@ textarea {
     padding: 15px;
     padding-left: 100px;
     padding-right: 100px;
+    border-radius: 10px;
 }
 
 .text span {
