@@ -38,7 +38,7 @@
         </div>
         
         <div class="information Tuesday">
-        <label for="datetimePicker">Rallying time for Tuesday:</label>
+        <label for="datetimePicker">Starting time for Tuesday:</label>
         <input type="datetime-local" id="datetimePicker">
         <label for="Information">Information about the day:</label>
         <input type="text" id="Information">
@@ -53,8 +53,8 @@
                 const rallytime = timestamp - 1800;
 
                 document.getElementById("InformationOutput").textContent = `${InformationInput}`;
-                document.getElementById("timestampDisplay").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
-                document.getElementById("rallytimeDisplay").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+                document.getElementById("timestampDisplay").textContent = `> :bugle: Start time: <t:${timestamp}:T>/<t:${timestamp}:R>`;
+                document.getElementById("rallytimeDisplay").textContent = `> :bugle: Rally time: <t:${rallytime}:T>/<t:${rallytime}:R>`;
 
                 
 
@@ -62,7 +62,7 @@
         </script>
         </div> 
         <div class="informationWEDNESDAY">
-            <label for="datetimePickerWEDNESDAY">Rallying time for Wednesday:</label>
+            <label for="datetimePickerWEDNESDAY">Starting time for Wednesday:</label>
             <input type="datetime-local" id="datetimePickerWEDNESDAY">
             <label for="InformationWEDNESDAY">Information about the day:</label>
             <input type="text" id="InformationWEDNESDAY">
@@ -78,15 +78,15 @@
     
                     
                     document.getElementById("InformationOutputWEDNESDAY").textContent = `${InformationInput}`;
-                    document.getElementById("timestampDisplayWEDNESDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
-                    document.getElementById("rallytimeDisplayWEDNESDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+                    document.getElementById("timestampDisplayWEDNESDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T>/<t:${timestamp}:R>`;
+                    document.getElementById("rallytimeDisplayWEDNESDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T>/<t:${rallytime}:R>`;
                 });
             </script>
     
         </div>
         <div class="informationThursday">
             <div class="informationThursday">
-                <label for="datetimePickerThursday">Rallying time for Thursday:</label>
+                <label for="datetimePickerThursday">Starting time for Thursday:</label>
                 <input type="datetime-local" id="datetimePickerThursday">
                 <label for="InformationThursday">Information about the day:</label>
                 <input type="text" id="InformationThursday">
@@ -101,8 +101,8 @@
                         const rallytime = timestamp - 1800;
         
                         document.getElementById("InformationOutputThursday").textContent = `${InformationInput}`;
-                        document.getElementById("timestampDisplayThursday").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
-                        document.getElementById("rallytimeDisplayThursday").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+                        document.getElementById("timestampDisplayThursday").textContent = `> :bugle: Start time: <t:${timestamp}:T>/<t:${timestamp}:R>`;
+                        document.getElementById("rallytimeDisplayThursday").textContent = `> :bugle: Rally time: <t:${rallytime}:T>/<t:${rallytime}:R>`;
                     });
                 </script>
         
@@ -111,7 +111,7 @@
 
         <div class="friday">
             <div class="informationFRIDAY">
-                <label for="datetimePickerFRIDAY">Rallying time for Friday:</label>
+                <label for="datetimePickerFRIDAY">Starting time for Friday:</label>
                 <input type="datetime-local" id="datetimePickerFRIDAY">
                 <label for="InformationFRIDAY">Information about the day:</label>
                 <input type="text" id="InformationFRIDAY">
@@ -126,8 +126,8 @@
                         const rallytime = timestamp - 1800;
         
                         document.getElementById("InformationOutputFRIDAY").textContent = `${InformationInput}`;
-                        document.getElementById("timestampDisplayFRIDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
-                        document.getElementById("rallytimeDisplayFRIDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+                        document.getElementById("timestampDisplayFRIDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T>/<t:${timestamp}:R>`;
+                        document.getElementById("rallytimeDisplayFRIDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T>/<t:${rallytime}:R>`;
                     });
                 </script>
         
@@ -135,7 +135,7 @@
         </div>
 
         <div class="saturday"><div class="informationSATURDAY">
-            <label for="datetimePickerSATURDAY">Rallying time for Saturday:</label>
+            <label for="datetimePickerSATURDAY">Starting time for Saturday:</label>
             <input type="datetime-local" id="datetimePickerSATURDAY">
             <label for="InformationSATURDAY">Information about the day:</label>
             <input type="text" id="InformationSATURDAY">
@@ -150,15 +150,15 @@
                     const rallytime = timestamp - 1800;
     
                     document.getElementById("InformationOutputSATURDAY").textContent = `${InformationInput}`;
-                    document.getElementById("timestampDisplaySATURDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
-                    document.getElementById("rallytimeDisplaySATURDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+                    document.getElementById("timestampDisplaySATURDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T>/<t:${timestamp}:R>`;
+                    document.getElementById("rallytimeDisplaySATURDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T>/<t:${rallytime}:R>`;
                 });
             </script>
     
         </div>
 
         <div class="sunday"><div class="informationSUNDAY">
-            <label for="datetimePickerSUNDAY">Rallying time for Sunday:</label>
+            <label for="datetimePickerSUNDAY">Starting time for Sunday:</label>
             <input type="datetime-local" id="datetimePickerSUNDAY">
             <label for="InformationSUNDAY">Information about the day:</label>
             <input type="text" id="InformationSUNDAY">
@@ -173,8 +173,8 @@
                     const rallytime = timestamp - 1800;
     
                     document.getElementById("InformationOutputSUNDAY").textContent = `${InformationInput}`;
-                    document.getElementById("timestampDisplaySUNDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T><t:${timestamp}:R>`;
-                    document.getElementById("rallytimeDisplaySUNDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T><t:${rallytime}:R>`;
+                    document.getElementById("timestampDisplaySUNDAY").textContent = `> :bugle: Start time: <t:${timestamp}:T>/<t:${timestamp}:R>`;
+                    document.getElementById("rallytimeDisplaySUNDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T>/<t:${rallytime}:R>`;
                 });
             </script>
     
