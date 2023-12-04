@@ -43,6 +43,7 @@
         <label for="Information">Information about the day:</label>
         <input type="text" id="Information">
         <button id="insertTimestamp">Insert Data</button>
+        <button id="insertTimestampRAW">Insert Information about the day</button>
     
         <script>
             document.getElementById("insertTimestamp").addEventListener("click", function() {
@@ -59,6 +60,11 @@
                 
 
             });
+
+            document.getElementById("insertTimestampRAW").addEventListener("click", function() {
+                const InformationInput = document.getElementById("Information").value;
+                document.getElementById("InformationOutput").textContent = `${InformationInput}`;
+            });
         </script>
         </div> 
         <div class="informationWEDNESDAY">
@@ -67,6 +73,7 @@
             <label for="InformationWEDNESDAY">Information about the day:</label>
             <input type="text" id="InformationWEDNESDAY">
             <button id="insertTimestampWEDNESDAY">Insert Data</button>
+            <button id="insertTimestampWednesdayRAW">Insert Information about the day</button>
     
             <script>
                 document.getElementById("insertTimestampWEDNESDAY").addEventListener("click", function() {
@@ -81,6 +88,11 @@
                     document.getElementById("timestampDisplayWEDNESDAY").textContent = `> :goldstar: Start time: <t:${timestamp}:T>/<t:${timestamp}:R>`;
                     document.getElementById("rallytimeDisplayWEDNESDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T>/<t:${rallytime}:R>`;
                 });
+
+                document.getElementById("insertTimestampWednesdayRAW").addEventListener("click", function() {
+                    const InformationInput = document.getElementById("Information").value;
+                    document.getElementById("InformationOutputWEDNESDAY").textContent = `${InformationInput}`;
+                });
             </script>
     
         </div>
@@ -91,6 +103,7 @@
                 <label for="InformationThursday">Information about the day:</label>
                 <input type="text" id="InformationThursday">
                 <button id="insertTimestampThursday">Insert Data</button>
+                <button id="insertTimestampThursdayRAW">Insert Information about the day</button>
         
                 <script>
                     document.getElementById("insertTimestampThursday").addEventListener("click", function() {
@@ -104,6 +117,11 @@
                         document.getElementById("timestampDisplayThursday").textContent = `> :goldstar: Start time: <t:${timestamp}:T>/<t:${timestamp}:R>`;
                         document.getElementById("rallytimeDisplayThursday").textContent = `> :bugle: Rally time: <t:${rallytime}:T>/<t:${rallytime}:R>`;
                     });
+
+                    document.getElementById("insertTimestampThursdayRAW").addEventListener("click", function() {
+                        const InformationInput = document.getElementById("Information").value;
+                        document.getElementById("InformationOutputThursday").textContent = `${InformationInput}`;
+                    });
                 </script>
         
             </div>
@@ -116,6 +134,7 @@
                 <label for="InformationFRIDAY">Information about the day:</label>
                 <input type="text" id="InformationFRIDAY">
                 <button id="insertTimestampFRIDAY">Insert Data</button>
+                <button id="insertTimestampFRIDAYRAW">Insert Information about the day</button>
         
                 <script>
                     document.getElementById("insertTimestampFRIDAY").addEventListener("click", function() {
@@ -129,6 +148,11 @@
                         document.getElementById("timestampDisplayFRIDAY").textContent = `> :goldstar: Start time: <t:${timestamp}:T>/<t:${timestamp}:R>`;
                         document.getElementById("rallytimeDisplayFRIDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T>/<t:${rallytime}:R>`;
                     });
+
+                    document.getElementById("insertTimestampFRIDAYRAW").addEventListener("click", function() {
+                        const InformationInput = document.getElementById("Information").value;
+                        document.getElementById("InformationOutputFRIDAY").textContent = `${InformationInput}`;
+                    });
                 </script>
         
             </div>
@@ -140,6 +164,7 @@
             <label for="InformationSATURDAY">Information about the day:</label>
             <input type="text" id="InformationSATURDAY">
             <button id="insertTimestampSATURDAY">Insert Data</button>
+            <button id="insertTimestampSATURDAYRAW">Insert Information about the day</button>
     
             <script>
                 document.getElementById("insertTimestampSATURDAY").addEventListener("click", function() {
@@ -153,6 +178,11 @@
                     document.getElementById("timestampDisplaySATURDAY").textContent = `> :goldstar: Start time: <t:${timestamp}:T>/<t:${timestamp}:R>`;
                     document.getElementById("rallytimeDisplaySATURDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T>/<t:${rallytime}:R>`;
                 });
+                
+                document.getElementById("insertTimestampSATURDAYRAW").addEventListener("click", function() {
+                    const InformationInput = document.getElementById("Information").value;
+                    document.getElementById("InformationOutputSATURDAY").textContent = `${InformationInput}`;
+                });
             </script>
     
         </div>
@@ -163,6 +193,7 @@
             <label for="InformationSUNDAY">Information about the day:</label>
             <input type="text" id="InformationSUNDAY">
             <button id="insertTimestampSUNDAY">Insert Data</button>
+            <button id="insertTimestampSUNDAYRAW">Insert Information about the day</button>
     
             <script>
                 document.getElementById("insertTimestampSUNDAY").addEventListener("click", function() {
@@ -175,6 +206,11 @@
                     document.getElementById("InformationOutputSUNDAY").textContent = `${InformationInput}`;
                     document.getElementById("timestampDisplaySUNDAY").textContent = `> :goldstar: Start time: <t:${timestamp}:T>/<t:${timestamp}:R>`;
                     document.getElementById("rallytimeDisplaySUNDAY").textContent = `> :bugle: Rally time: <t:${rallytime}:T>/<t:${rallytime}:R>`;
+                });
+
+                document.getElementById("insertTimestampSUNDAYRAW").addEventListener("click", function() {
+                    const InformationInput = document.getElementById("Information").value;
+                    document.getElementById("InformationOutputSUNDAY").textContent = `${InformationInput}`;
                 });
             </script>
     
